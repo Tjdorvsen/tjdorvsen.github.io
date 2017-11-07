@@ -1,0 +1,228 @@
+.site-header {
+  font-family: $heading-font-family;
+  font-weight: bold;
+  position: fixed;
+  top: 0px;
+  text-align: center;
+
+  bottom: 0px;
+  width: 100%;
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  .site-header-container {
+    width: 635px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include transform(translate(-50%, -50%));
+  }
+}
+
+.site-avatar {
+  width: 128px;
+  height: 128px;
+  float: left;
+  border: 2px solid white;
+  @include border-radius(400px);
+  @include box-shadow(0px, 0px, 7px, rgba(0, 0, 0, 0.3));
+}
+
+.content {
+  display: block;
+  padding: 2px 0px 0px 160px;
+  position: relative;
+  text-align: left;
+}
+
+.site-title {
+  font-size: 47px;
+  position: relative;
+
+  .site-name {
+    color: $name-color;
+    text-transform: uppercase;
+  }
+
+  .site-nickname {
+    color: $nickname-color;
+    text-transform: lowercase;
+    font-size: 22px;
+    padding: 0;
+    margin: 0 0 0 5px;
+
+  }
+
+  .site-description {
+    font-size: 22px;
+    color: $sub-title-color;
+    text-transform: uppercase;
+    position: absolute;
+    top: 53px;
+    left: 8px;
+  }
+}
+
+.site-links {
+  font-size: 22px;
+  padding: 18px 0px 0px 3px;
+
+  a {
+    float: left;
+    color: $link-color;
+    position: relative;
+    padding: 0px 7px;
+    white-space: nowrap;
+
+    .link-text {
+      visibility: hidden;
+      font-size: $base-font-size;
+      position: absolute;
+      top: 30px;
+      left: 50%;
+      @include transform(translate(-50%, 0%));
+    }
+    &:hover {
+      color: $brand-color-light;
+      .link-text {
+        visibility: visible;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .site-links {
+    padding: 16px 0px 0px 5px;
+    margin-left: 3px;
+    width: 472;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    a {
+      float: none;
+      line-height: 22px;
+      padding: 0px;
+      margin: 3px 12px 0px 0px;
+
+      .link-text {
+        margin-left: 4px;
+        visibility: visible;
+        position: static;
+        display: inline-block;
+        @include transform(translate(0%, -11%));
+
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 615px) {
+  .site-header {
+    .site-header-container {
+      width: 410px;
+    }
+  }
+
+  .site-avatar {
+    width: 100px;
+    height: 100px;
+  }
+
+  .content {
+    padding: 4px 0px 0px 108px;
+  }
+
+  .site-title {
+    font-size: 24px;
+    padding-left: 6px;
+
+    .site-description {
+      font-size: 14px;
+      top: 32px;
+      left: 9px;
+    }
+  }
+
+  .site-links {
+    font-size: 16px;
+    
+    a {
+      .link-text {
+        @include transform(translate(0%, 0%));
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 419px) {
+  .site-header {
+    .site-header-container {
+      width: 320px;
+    }
+  }
+
+  .site-avatar {
+    width: 80px;
+    height: 80px;
+    float: none;
+    margin-bottom:2px;
+  }
+
+  .content {
+    padding: 0px 10px 0px 10px;
+    text-align: center
+  }
+
+  .site-title {
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+
+    .site-name {
+      font-size: 20px;
+      margin:0;
+      padding:0;  
+
+    }
+
+    .site-nickname {
+    display: block;
+    margin: 0;
+    padding: 0;
+    margin-top: 1px;
+    font-size: 16px;
+    line-height: 16px;
+    }
+
+    .site-description {
+      display: block;
+      font-size: 14px;
+      top: 52px;
+      left: -70px;
+      width:300px;
+
+    }
+  }
+
+  .site-links {
+    font-size: 14px;
+    padding: 28px 0px 0px 0px;
+    margin-left: 0px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+    a {
+      padding: 0px;
+      margin: 0px 5px;
+
+      .link-text {
+        @include transform(translate(0%, 0%));
+      }
+    }
+  }
+}
