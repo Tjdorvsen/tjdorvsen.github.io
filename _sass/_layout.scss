@@ -39,7 +39,7 @@
 
 .site-title {
   font-size: 47px;
-  position: relative;
+  
 
   .site-name {
     color: $name-color;
@@ -60,8 +60,9 @@
     color: $sub-title-color;
     text-transform: uppercase;
     position: absolute;
-    top: 53px;
-    left: 8px;
+    top: 58px;
+    left: 168px;
+    min-width:400px;
   }
 }
 
@@ -140,10 +141,19 @@
     font-size: 24px;
     padding-left: 6px;
 
+  .site-name {
+        font-size: 24px;
+        margin:0;
+        padding:0;  
+        width:300px;
+      }
+
     .site-description {
       font-size: 14px;
-      top: 32px;
-      left: 9px;
+      position:absolute;
+      top: 36px;
+      left: 118px;
+      min-width:380px;
     }
   }
 
@@ -186,6 +196,7 @@
       font-size: 20px;
       margin:0;
       padding:0;  
+      width:300px;
 
     }
 
@@ -200,10 +211,12 @@
 
     .site-description {
       display: block;
+      position:absolute;
       font-size: 14px;
-      top: 52px;
-      left: -70px;
-      width:300px;
+      top: 54px;
+      left: 40px;
+      min-width:220px;
+
 
     }
   }
