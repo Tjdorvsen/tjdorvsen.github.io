@@ -6,11 +6,11 @@ email: pbagnpg@gwqbeifra.zr #ROT13 for security
 mailto: "&#109;&#097;&#105;&#108;&#116;&#111;:&#117;&#110;&#103;&#117;&#114;&#101;&#097;&#110;&#117;&#046;&#116;&#117;&#100;&#111;&#114;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;" #hexa
 description: FrontEnd Apprentice with Force Afinity
 baseurl: "" 
-hostname: tjdorvsen.eu.org
-url: http://tjdorvsen.eu.org
+hostname: 
+url: 
 permalink: /:title/
 
-cv_url: 
+cv_url: {{ site.baseurl }}/docs/Tudor's%20CV.pdf
 projects: 
 twitter_username: tjdorvsen
 github_username: tjdorvsen
