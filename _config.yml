@@ -10,7 +10,7 @@ hostname:
 url: 
 permalink: /:title/
 
-cv_url: {{ site.baseurl }}/docs/Tudor's%20CV.pdf
+cv_url: /docs/Tudor's%20CV.pdf
 projects: 
 twitter_username: tjdorvsen
 github_username: tjdorvsen
